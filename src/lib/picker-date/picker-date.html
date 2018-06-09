@@ -1,0 +1,11 @@
+<picker-outlet style="background-color: #efefef;" [formGroup]="form">
+  <picker-col formControlName="year">
+    <div [pickerColItem]="item" *ngFor="let item of cascadeData_">{{item.text}}</div>
+  </picker-col>
+  <picker-col formControlName="month">
+    <div [pickerColItem]="item" *ngFor="let item of months">{{item.text}}</div>
+  </picker-col>
+  <picker-col formControlName="day">
+    <div [pickerColItem]="item" *ngFor="let item of days">{{item.text}}</div>
+  </picker-col>
+</picker-outlet>
